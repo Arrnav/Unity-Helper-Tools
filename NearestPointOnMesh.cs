@@ -11,7 +11,7 @@ public static class NearestPointOnMesh
 
         // convert point to local space
         point = t.InverseTransformPoint(point);
-        Mesh mesh = Object.GetComponent<MeshFilter>().mesh;
+        Mesh mesh = Object.GetComponent<MeshFilter>().sharedMesh;
 
         float minDistanceSqr = Mathf.Infinity;
         Vector3 nearestVertex = Vector3.zero;
