@@ -1,11 +1,15 @@
 # Unity-Helper-Tools
 This is a repo full of small utility scripts I use for my client &amp; personal projects. Improvements and additions are welcome. Use at your own discretion. 
 
+
+
 NearestPointOnMesh.cs :
 
 Get Nearest Point on a Mesh by iterating through all vertices (Not the same as Nearest point on Collider). Although a little expensive on paper, in practice, I haven't noticed a search time longer than 20 ms or so, Even on medium end mobile devices I tested on with meshes having 3000+ faces.
 
 Use static method "NearestVertexTo()", with first parameter being the Vector3 Input point & the second parameter being the GameObject to check vertices in. Ofcourse, A MeshFilter component with a valid Mesh must be attached to the supplied GameObject.
+
+
 
 SubMeshCombine.cs :
 
